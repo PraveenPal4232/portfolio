@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h2,h3,h4,h5,h6{
+    font-family: Comfortaa;
+    color:#ffc107; 
+    margin-top: 15px;
+}
+nav{
+    padding: 2em;
+    position: fixed;
+    right: 0px;
+}
+.logo img{
+    width: 60px;
+}
+.portfolio{
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #ffd900;
+    background: #ffd900;
+    border-radius: 20px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    display: block;
+    width: 125px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all .3s ease-out;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    text-shadow: 1px 1px 1px #999;
+}
+.portfolio:hover{
+    border: 1px solid #f3af17;
+    background: #f3af17;
+    transition: all .3s ease-out;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5em 1em;
+    margin-bottom: 5em;
+}
+#welcome{
+    grid-column: 2/12;
+}
+#welcome h1{
+    font-family: lato;
+    font-weight: 900;
+    margin: 3em 0em 1em 0em;
+    font-size: calc(1em + 3vw)
+}
+#welcome img,#bio2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bio{
+    grid-row: 2/3;
+    grid-column: 3/10;
+}
+#bio p,#bio2 p,#bio3 ul li,#bio4 p{
+    font-family: Comfortaa;
+    font-size: calc(14px + .25vw);
+    line-height: 25px;
+}
+#bio2{
+    grid-row: 3/4;
+    grid-column: 2/5
+}
+#bio3{
+    grid-row: 3/4;
+    grid-column: 6/11;
+}
+#bio3 h1{
+    font-family: lato;
+    font-weight: 900;
+    margin: .5em 0em;
+    font-size: calc(1em + 2vw)
+}
+#bio3 ul li{
+    list-style: square;
+    margin-bottom: .5em;
+    padding-left: 1em;
+}
+#bio4{
+    grid-row: 4/5;
+    grid-column: 4/10;
+}
+#bio4 p{
+    text-align: center;
+    padding: .3em 1em;
+}
+#bio4 p span{
+    border-bottom: 2px solid #ffd900;
+}
+footer{
+    background: #eee;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    padding: 0px 10px;
+    color:#000;
+    border-bottom: 2px solid #ffd900;
+    text-decoration: none;
+    font-family: Comfortaa;
+    margin: 0px 10px;
+    transition: all .2s ease-out;
+    padding-top: 5px;
+}
+footer a:focus{
+    background: #ffd900;
+    transition: all .2s ease-out;
+}
+::selection {
+    background: #ddd;
+}
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 5px;
+}
+
+/* Custom Scrollbars Ends */
+
+    
+    
+@media only screen and (max-width: 768px){
+    main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3em 0em;
+    padding: 1em;
+        margin-bottom: 3em
+}
+    #welcome h1 img{
+        width: 50px;
+    }
+    #bio {
+    grid-row: 2/3;
+    grid-column: 1/12;
+}
+    #bio2 {
+    grid-row: 3/4;
+    grid-column: 1/12;
+}
+    #bio3 {
+    grid-row: 4/5;
+    grid-column: 1/12;
+}
+    #bio3 ul{
+    margin-left: 1em;
+}
+    #bio4 {
+    grid-row: 5/6;
+    grid-column: 1/12;
+}
+    #bio4 p{
+    padding: .2em;
+}
+    
+} 
+

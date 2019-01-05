@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h2,h3,h4,h5,h6{
+    font-family: Comfortaa;
+    color:#ffc107; 
+    margin-top: 15px;
+}
+nav{
+    padding: 2em;
+    position: fixed;
+    right: 0px;
+}
+.about_me{
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #ffd900;
+    background: #ffd900;
+    border-radius: 20px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    display: block;
+    width: 125px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all .3s ease-out;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    text-shadow: 1px 1px 1px #999;
+}
+.about_me:hover{
+    border: 1px solid #f3af17;
+    background: #f3af17;
+    transition: all .3s ease-out;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+header img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#hello{
+    display: none;
+}
+.bio{
+    padding: 30vh 5em 0em 4em;
+}
+.bio h1{
+    font-family: lato;
+    font-weight: 900;
+}
+.bio p{
+    font-family: Comfortaa;
+    line-height: 22px;
+    margin: 10px 0px 15px 0px;
+}
+.first{
+    font: 500 50px/30px Abril Fatface;
+    float: left;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 9px;
+    color: #ffb618;
+    background: rgba(255, 255, 255, 0.75);
+    min-width: 40px;
+    height: 35px;
+    text-transform: uppercase;
+}
+.hire_me{
+    padding: 10px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all .3s ease-out;
+}
+.hire_me:hover{
+    color: #fff;
+    border: 1px solid #000;
+    background: #000;
+    transition: all .3s ease-out;
+}
+.heading{
+    font-family: lato;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 70px;
+}
+.sub_heading{
+    font-family: Comfortaa;
+    line-height: 22px;
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+}
+.project{
+    display: grid;
+    grid-gap: 6em 0em;
+    grid-template-columns: 1fr 1fr;
+    margin: 5em 0em;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project_intro{
+    padding: 10vh 5em 0em 5em;
+}
+.project_intro h1{
+    font-family: lato;
+    font-weight: 900;
+}
+.project_intro p{
+    font-family: Comfortaa;
+    line-height: 22px;
+    margin: 10px 0px 15px 0px;
+}
+.project img:hover{
+    box-shadow: 15px 15px 30px rgba(0,0,0,.2);
+    transition: all .2s ease-out;
+}
+footer{
+    background: #eee;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    padding: 0px 10px;
+    color:#000;
+    border-bottom: 2px solid #ffd900;
+    text-decoration: none;
+    font-family: Comfortaa;
+    margin: 0px 10px;
+    transition: all .2s ease-out;
+    padding-top: 5px;
+}
+footer a:focus{
+    background: #ffd900;
+    transition: all .2s ease-out;
+}
+::selection {
+    background: #ddd;
+}
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 5px;
+}
+
+/* Custom Scrollbars Ends */
+
+
+@media only screen and (max-width: 1024px){
+    .bio{
+    padding: 15vh 5em 0em 4em;
+}
+    .project_intro{
+    padding: 10vh 2.5em 0em 2.5em;
+}
+    
+}
+    
+    
+@media only screen and (max-width: 768px){
+    header{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+}
+    #hello{
+        display: block;
+        font-family: lato;
+        font-weight: 900;
+        color: #fff;
+        position: absolute;
+        top: 70vh;
+        padding: 15px;
+        text-shadow: 1px 1px 2px #000;
+        font-size: 25px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .bio{
+    display: none;
+}
+    .hire_me{
+    padding: 10px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    display: block;
+    width: 130px;
+        font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all .3s ease-out;
+}
+    .heading{
+    margin-top: 30px;
+        font-size: 25px;
+}
+    .sub_heading{
+    padding: 0em 2em;
+}
+    .sub_heading{
+    font-family: Comfortaa;
+    line-height: 22px;
+    text-align: center;
+    margin: 5px 0px 50px 0px;
+}
+    .project{
+    grid-gap: 1em 0em;
+    grid-template-columns:1fr;
+    margin: 1em 0em;
+}
+    .project div:nth-child(2){
+    grid-row: 1/2;
+}
+    .project_intro{
+    padding: 1em;
+}
+    .project_intro h1{
+    font-size: 25px;
+}
+    
+} 
+

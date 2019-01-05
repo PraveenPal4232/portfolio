@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html>
+    <head>
+    <title>Praveen Pal | Freelance Front-End Developer | UI/UX Developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/fabicon.png">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body >
+            <nav>
+                <a href ="about.html" class="about_me">About Me</a>
+            </nav>
+        <header>
+            <div ><img src="img/praveenpal.jpg"onload="typeWriter()" ></div>
+            <div class="bio">
+                <h1>Hi There!</h1>
+                <h1>I am Praveen Pal</h1>
+                <p><span class="first">I’</span>m a freelance front-end and UI/UX developer based in New Delhi, India. I am specialised in all things HTML, CSS, and a little bit JavaScript, but passionate about all aspects of technology. I partner with design teams to execute and build beautiful, progressive Web user interfaces and design systems, with a strong focus on responsive design, performance, and accessibility, using the latest front-end design techniques.</p><a href="about.html" class="hire_me">Hire Me</a>
+            </div>
+            <h1 id="hello"></h1>
+        </header>
+        <main>
+            <h1 class="heading">Some freelancing Projects</h1>
+            <p class="sub_heading">Here is some projects I worked for my some clients.</p>
+            <div class="project">
+                <div class="project_intro">
+                <h1>Rahu Designs</h1>
+                <p>If you think you want to be a hacker it may be good thing for you or may be not. It is a simple code gassing / creacing game or tool. it helps  you to get a perfect guss for a code you don't no what it is. The goodness of this game everyhing is rendom, nothig is preefined.</p><a href="#" class="hire_me">View Project</a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/project1.jpg"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/project2.jpg"></a>
+                </div>
+                <div class="project_intro">
+                <h1>I am Praveen Pal</h1>
+                <p>freelance front-end UI/UX developer based in New Delhi, India working with companies across the globe. I partner with design teams to execute and build beautiful, progressive Web user interfaces and design systems, with a strong focus on responsive design, performance, and accessibility, using the latest front-end design techniques. Learn more about my services.</p><a href="#" class="hire_me">View Project</a>
+                </div>
+            </div>
+            <h1 class="heading">Some Github Projects</h1>
+            <p class="sub_heading">Here is some projects I worked with colebration on Github.</p>
+            <div class="project">
+            <div class="project_intro">
+               <h1>Code Guessing Game</h1>
+                <p>If you think you want to be a hacker it may be a good thing for you or maybe not. It is a simple code guessing / creating game or tool. it helps you to get a perfect guess for the code you don't know what it is. The goodness of this game everything is random, nothing is predefined.</p><a href="#" class="hire_me">View Project</a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/Code-Gassing-Game.jpg"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/Canvas-Particals.jpg"></a>
+                </div>
+                <div class="project_intro">
+                <h1>Canvas Particals</h1>
+                <p>The canvas element is part of HTML5 and allows for dynamic, scriptable rendering of 2d shapes and bitmap images. It is a canvas particle with simple animation. Canvas allows us to the drawable region on your screen. But is diffrent from SVG. Some anticipated uses of canvas include building graphs, animations, games, and image composition. </p><a href="#" class="hire_me">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+            <div class="project_intro">
+                <h1>Basic Calculator</h1>
+                <p>Callculator is a simple machine with help of a calculator we can make some mathamatical calculastion. Same a simple calculator i made with javascript calulater. You can solve some basic mathimatical calulastion with it.Its sturacture is very simple you just type your values and just get what you want to be.</p><a href="#" class="hire_me">View Project</a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/Basic-Calculator.jpg"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="#">Twitter</a><a href="#">Linkedin</a><a href="#">Github</a>
+        </footer>
+        
+        <script>
+var i = 0;
+var txt = 'I’m a freelance front-end and UI/UX developer based in New Delhi, India.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("hello").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+        
+    </body>
+</html>
