@@ -93,8 +93,10 @@ main{
     text-align: center;
     padding: .3em 1em;
 }
-#bio4 p span{
+#bio4 p span,#bio4 p span a{
     border-bottom: 2px solid #ffd900;
+    color:#000;
+    text-decoration: none;
 }
 footer{
     background: #eee;
@@ -103,12 +105,11 @@ footer{
     justify-content: center;
 }
 footer a{
-    padding: 0px 10px;
     color:#000;
     border-bottom: 2px solid #ffd900;
     text-decoration: none;
     font-family: Comfortaa;
-    margin: 0px 10px;
+    margin: 0px 25px;
     transition: all .2s ease-out;
     padding-top: 5px;
 }
