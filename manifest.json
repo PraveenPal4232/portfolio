@@ -1,0 +1,33 @@
+{
+	"lang": "en",
+	"name": "Praveen Pal | Freelance Front-End Developer | UI/UX Developer",
+	"short_name": "Praveen Pal",
+	"description": "Praveen Pal is a freelance front-end and UI/UX developer based in New Delhi, India. I am specialised in all things HTML, CSS, and a little bit JavaScript, but passionate about all aspects of technology.",
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"start_url": "/",
+	"display": "minimal-ui",
+	"icons": [
+		{
+			"src": "/img/Praveen Pal--large.png",
+			"sizes": "777x777",
+			"type": "image/png"
+		},
+		{
+			"src": "/img/Praveen Pal--medium.png",
+			"sizes": "450x450",
+			"type": "image/png"
+		},
+		{
+			"src": "img/Praveen Pal--small.png",
+			"sizes": "150x150",
+			"type": "image/png"
+		},
+		{
+            "src": "/img/apple-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+
+	]
+}
